@@ -1,0 +1,533 @@
+/* Descricao: buscando dados no banco
+Autor: Ivan Kloh
+Data: 29/05/2020 até 30/06/2020
+*/
+	.menu{
+		margin-left: 230px;/* margem a esquerda*/
+     	margin-top: 50px;/* margem superior*/
+     	width: 1000px;/* largura*/
+     	background: #fff;/*cor branca */
+
+	}
+	#inicio{
+		background-color: #0000FF;/*cor azul*/ 
+		left:370px;/*lado esquerdo*/
+		position: relative;
+		width: 279px;/*largura */
+		height: 25px;/* altura*/
+		border-radius: 7px;/* arredonda os cantos*/
+		margin-bottom: 20px; /*espaçamento entre os botoes */
+		cursor: pointer;/*mao do mause */
+		font-size: 25px;
+			
+	}
+	#inicio a{
+
+		text-decoration: none;/* texto sem decoração*/
+		font-size: 25px;/* tamanho da fonte */
+		color:white;/*cor cinza claro */
+		padding: 9px 30px;/*preenchimento */
+		text-align: center;/*texto alinhado no centro */
+		font-family: "lucida Console", Courier, monospace;/* */
+		
+	}
+	#inicio a:hover{
+		background-color: #A9A9A9;/*cor cinza */
+		color: black;/*cor preta */
+		border-radius: 7px;/*arredonda os cantos */
+		font-size: 25px;/*tamanho da fonte*/
+		text-decoration: none;
+		padding: 9px 34px;/*preenchimento */
+	}
+	 .menuAlunos{
+    	background-color:#0000FF;/* cor azul*/
+        right: 155px;/* margem a direita*/
+        position: relative;/* posicao*/
+        width: 163px;/* largura*/
+        height: 19px;/* altura*/
+        border-radius: 7px;/*arredonda os cantos */
+        /* margin-bottom: 20px; */
+        cursor: pointer;/*mao do mouse */
+        padding: 8px 15px;/* preenchimento */
+        color: black;/* cor preta*/
+        text-align: center;/* texto alinhado no centro*/
+        font-size: 18px;/* tamanho da fonte*/
+        bottom: 87px;/* margim inferior*/
+    }
+    .menuAlunos a{
+    	width: 213px;/* largura*/
+    	text-decoration: none;/* texto sem decoração*/
+    	font-size: 18px;/* tamanho da fonte */
+    	color:#f2f2f2;/*cor cinza claro */
+    	padding: 8px 4px;/*preenchimento */
+    	text-align: center;/*texto alinhado no centro */
+    	font-family: Arial;/* tipo de fonte*/
+    	text-align: center;/* texto alinhado no centro*/
+    	bottom: 220px;/*margim inferior */
+    }
+    .menuAlunos a:hover{
+   		background-color: #A9A9A9;/*cor cinza */
+   		color: black;/*cor preta */
+   		border-radius: 7px;/*arredonda os cantos */
+   		font-size: 18px;/*tamanho da fonte*/
+   		padding: 8px 4px;/*preenchimento */
+   		width: 155px;/* largura*/
+   		text-align: center;/*texto alihado no centro */
+    }
+
+    .menuDisciplina {
+        background-color:#0000FF;/* cor azul*/
+        position: relative;/*posicao */
+        width: 163px;/*largura */
+        height: 19px;/*altura */
+        border-radius: 7px;/*arredonda os cantos */
+        cursor: pointer;/* mao do mause*/
+        padding: 8px 4px;/*preenchimento */
+        left: 53px;/* margem a esquerda*/
+        text-align: center;/* texto alinhado no centro*/
+        bottom: 122px;/*margem inferior */
+     }
+    .menuDisciplina a{
+   		text-decoration: none;/* texto sem decoração*/
+   		font-size: 18px;/* tamanho da fonte */
+   		color:#f2f2f2;/*cor cinza claro */
+   		padding: 8px 4px;/*preenchimento */
+  		text-align: center;/*texto alinhado no centro */
+  		font-family: Arial;/* tipo de fonte*/
+   		text-align: center;/* texto alinhado no centro*/
+    }
+    .menuDisciplina a:hover{
+   		background-color: #A9A9A9;/*cor cinza */
+   		color: black;/*cor preta */
+   		border-radius: 7px;/*arredonda os cantos */
+   		font-size: 18px;/*tamanho da fonte*/
+   		padding: 8px 4px;/*preenchimento */
+   		text-align: center;/*texto alinhado no centro */
+    }
+    .menuProfessores{
+        background-color:#0000FF;/* cor azul*/
+        position: relative;/* posicao*/
+        width: 163px; /* largura*/
+        height: 19px; /* altura*/
+        border-radius: 7px;/*arredonda os cantos */
+        cursor: pointer;/* mao do mause*/
+        padding: 8px 20px;/* preenchimento*/
+        left: 239px;/* margem a esquerda*/
+        bottom: 158px;/* mrgem inferior*/
+        text-align: center;/*texto centralizado */
+    }
+    .menuProfessores a{
+    	text-decoration: none;/* texto sem decoração*/
+   		font-size: 18px;/* tamanho da fonte */
+   		color:#f2f2f2;/*cor cinza claro */
+   		padding: 8px 4px;/*preenchimento */
+   		text-align: center;/*texto alinhado no centro */
+   		font-family: Arial;/* tipo de fonte */
+   		text-align: center;/*texto centralizado */
+    }
+    .menuProfessores a:hover{
+   		background-color: #A9A9A9;/*cor cinza */
+   		color: black;/*cor preta */
+  		border-radius: 7px;/*arredonda os cantos */
+   		font-size: 18px;/*tamanho da fonte*/
+   		padding: 8px 4px;/*preenchimento */
+   		text-align: center;/*texto centralizado */
+    }
+     .menuTurmas{
+        background-color:#0000FF;/* cor azul*/
+        position: relative;/* posicao*/
+        width: 163px; /* largura*/
+        height: 19px; /* altura*/
+        border-radius: 7px;/*arredonda os cantos */
+        cursor: pointer;/* mao do mause*/
+        padding: 8px 20px;/* preenchimento*/
+        left: 459px;/* margem a esquerda*/
+        bottom: 192px;/* mrgem inferior*/
+        text-align: center;/*texto centralizado */
+    }
+    .menuTurmas a{
+    	text-decoration: none;/* texto sem decoração*/
+   		font-size: 18px;/* tamanho da fonte */
+   		color:#f2f2f2;/*cor cinza claro */
+   		padding: 8px 4px;/*preenchimento */
+   		text-align: center;/*texto alinhado no centro */
+   		font-family: Arial;/* tipo de fonte */
+   		text-align: center;/*texto centralizado */
+    }
+    .menuTurmas a:hover{
+   		background-color: #A9A9A9;/*cor cinza */
+   		color: black;/*cor preta */
+  		border-radius: 7px;/*arredonda os cantos */
+   		font-size: 18px;/*tamanho da fonte*/
+   		padding: 8px 4px;/*preenchimento */
+   		text-align: center;/*texto centralizado */
+    }
+    .menuUsuario{
+   	    background-color:#0000FF;/* cor azul*/
+        position: relative;/* posicao*/
+        width: 163px;/*largura */
+        height: 19px;/* altura*/
+        border-radius: 7px;/* arredonda os cantos*/
+        cursor: pointer;/*mao do mause */
+        padding: 8px 3px;/* preenchimento*/
+        left: 677px;/* margem a esquerda*/
+        text-align: center;/*texto centralizado */
+        bottom: 228px;/*margem inferior */
+    }
+    .menuUsuario a{
+   		text-decoration: none;/* texto sem decoração*/
+   		font-size: 18px;/* tamanho da fonte */
+   		color:#f2f2f2;/*cor cinza claro */
+   		padding: 8px 4px;/*preenchimento */
+   		text-align: center;/*texto alinhado no centro */
+   		font-family: Arial;/*tipo de fonte */
+   		text-align: center;/* texto centralizado*/
+    }
+    .menuUsuario a:hover{
+    	background-color: #A9A9A9;/*cor cinza */
+    	color: black;/*cor preta */
+    	border-radius: 7px;/*arredonda os cantos */
+    	font-size: 18px;/*tamanho da fonte*/
+    	padding: 8px 4px;/*preenchimento */
+    	text-align: center;	/* texto centralizado*/
+    }
+    .menuSair{
+        background-color: #0000FF;/* cor azul*/
+        position: relative;/* posicao*/
+        width: 163px;/*largura */
+        height: 19px;/* altura*/
+        border-radius: 7px;/*arredonda os cantos */
+        cursor: pointer;/* mao do mause*/
+        padding: 8px 20px;/* preenchimento*/
+        left: 859px;/* margem a esquerda*/
+        text-align: center;/* texto centralizado*/
+        bottom: 265px;/* margem inferior*/
+    }
+
+    .menuSair a{
+    	text-decoration: none;/* texto sem decoração*/
+   		font-size: 18px;/* tamanho da fonte */
+   		color:#f2f2f2;/*cor cinza claro */
+   		padding: 8px 4px;/*preenchimento */
+   		text-align: center;/*texto alinhado no centro */
+   		font-family: Arial;/*tipo de fonte */
+   		text-align: center;/* texto centralizado */
+   		
+    }
+    .menuSair a:hover{
+   		background-color: #A9A9A9;/*cor cinza */
+   		color: black;/*cor preta */
+   		border-radius: 7px;/*arredonda os cantos */
+   		font-size: 18px;/*tamanho da fonte*/
+   		padding: 8px 4px;/*preenchimento */
+   		text-align: center;/* texto centralizado*/
+   	
+    }
+    .lista{
+   	    background-color: #0000FF;/* cor azul*/
+        right: 84px;/*margem  a direita */
+        position: relative;/* *posicao*/
+        width: 163px;/* largura*/
+        height: 19px;/*altura */
+        border-radius: 7px;/*arredonda os cantos */
+        cursor: pointer;/* mao do mouse*/
+        padding: 8px 20px;/* preenchimento*/
+        color: black;/*cor preta */
+        text-align: center;/* texto centralizado*/
+        font-size: 28px;/*tamnho da fonte */
+        bottom: 85px;/* margem inferior*/
+       
+    }
+    .lista a{
+   		text-decoration: none;/* texto sem decoração*/
+   		font-size: 18px;/* tamanho da fonte */
+   		color:#f2f2f2;/*cor cinza claro */
+   		padding: 8px 4px;/*preenchimento */
+   		text-align: center;/*texto alinhado no centro */
+    	font-family: Arial;/* tipo de fonte*/
+   		text-align: center;/* texto centralizado*/
+    }
+    .lista a:hover{
+   		background-color: #A9A9A9;/*cor cinza */
+   		color: black;/*cor preta */
+   		border-radius: 7px;/*arredonda os cantos */
+   		font-size: 18px;/*tamanho da fonte*/
+   		padding: 8px 4px;/*preenchimento */
+   		width: 155px;/* largura*/
+   		text-align: center;/*texto centralizado */
+    }
+    .cadastra{
+        background-color: #0000FF;/* cor azul*/
+        left: 195px;/* margem a esquerda*/
+        position: relative;/*posicao */
+        width: 163px;/* largura*/
+        height: 19px;/*altura */
+        border-radius: 7px;/*arredonda os cantos */
+        cursor: pointer;/* mao do mause*/
+        padding: 8px 20px;/* preenchimento*/
+        color: black;/*cor preta */
+        text-align: center;/*texto centralizado */
+        font-size: 18px;/*tamanho da fonte */
+        bottom: 120px;/*margem inferior */
+    }
+    .cadastra a{
+   		text-decoration: none;/* texto sem decoração*/
+   		font-size: 18px;/* tamanho da fonte */
+   		color:#f2f2f2;/*cor cinza claro */
+   		padding: 8px 4px;/*preenchimento */
+   		text-align: center;/*texto alinhado no centro */
+   		font-family: Arial;/* tipo de fonte*/
+   		text-align: center;/* texto centralizado*/
+    }
+    .cadastra a:hover{
+   		background-color: #A9A9A9;/*cor cinza */
+   		color: black;/*cor preta */
+   		border-radius: 7px;/*arredonda os cantos */
+   		font-size: 18px;/*tamanho da fonte*/
+   		padding: 8px 4px;/*preenchimento */
+   		width: 155px;/* largura*/
+   		text-align: center;/* texto centralizado*/
+    }
+    .busca{
+   	    background-color: #0000FF;/* cor azul*/
+        left: 474px;/*margem a esquerda */
+        position: relative;/*posicao */
+        width: 163px;/* largura*/
+        height: 19px;/* altura*/
+        border-radius: 7px;/* arredonda os cantos*/
+        cursor: pointer;/* mao do mause*/
+        padding: 8px 20px;/* preenchimento*/
+        color: black;/* cor preta*/
+        text-align: center;/* texto centralizado*/
+        font-size: 18px;/* tamnho da fonte*/
+        bottom: 156px;/*margem inferior */
+    }
+    .busca a{
+   		text-decoration: none;/* texto sem decoração*/
+   		font-size: 18px;/* tamanho da fonte */
+   		color:#f2f2f2;/*cor cinza claro */
+   		padding: 8px 4px;/*preenchimento */
+   		text-align: center;/*texto alinhado no centro */
+   		font-family: Arial;/*tipo de fonte */
+   		text-align: center;/* texto centralizado*/
+    }
+    .busca a:hover{
+   		background-color: #A9A9A9;/*cor cinza */
+   		color: black;/*cor preta */
+   		border-radius: 7px;/*arredonda os cantos */
+  		font-size: 18px;/*tamanho da fonte*/
+   		padding: 8px 4px;/*preenchimento */
+   		width: 155px;/*largura */
+   		text-align: center;/*texto centralizado */
+    }
+    .sair{
+     	background-color: #0000FF;/* cor azul*/
+        left: 739px;/*margim a esquerda */
+        position: relative;/*posicao */
+        width: 163px;/*largura */
+        height: 19px;/*altura */
+        border-radius: 7px;/*arredonda os cantos */
+        cursor: pointer;/*mao do mause */
+        padding: 8px 20px;/* preenchimneto*/
+        color: black;/* cor preta*/
+        text-align: center;/*texto centralizado */
+        font-size: 18px;/* tamanho da fonte*/
+        bottom: 191px;/*margem inferior */
+
+    }
+    .sair a{
+    	text-decoration: none;/* texto sem decoração*/
+        font-size: 18px;/* tamanho da fonte */
+    	color:#f2f2f2;/*cor cinza claro */
+    	padding: 8px 4px;/*preenchimento */
+    	text-align: center;/*texto alinhado no centro */
+    	font-family: Arial;/*tipo de fonte */
+    	text-align: center;/*texto centralizado */
+    }
+    .sair a:hover{
+    	background-color: #A9A9A9;/*cor cinza */
+    	color: black;/*cor preta */
+    	border-radius: 7px;/*arredonda os cantos */
+    	font-size: 18px;/*tamanho da fonte*/
+    	padding: 8px 4px;/*preenchimento */
+    	width: 155px;/*largura */
+    	text-align: center;/* texto centralizado*/
+    	
+    }
+    #myTable {
+        margin-top: 15px;/* margem superior*/
+        text-align: center;/* texto centralizado*/
+        overflow:hidden;/* */
+        font-family: Arial;/*fonte da letra */
+        width: 100%;/*largura */
+        -webkit-border-radius: 25px;/*arredonda os cantos */
+        -moz-border-radius: 25px;/* arredonda os cantos*/
+        border-radius: 35px;/* arredonda os cantos*/
+        border:solid 2px black;/*borda preta */
+    	border-collapse: collapse;/*define as celulas dentro da tabela */
+    	font-size: 14px;/*tamanho da fonte*/
+    	top: 54px;/* margem superior*/
+        right: 143px;/* margem a direita*/
+    }
+  
+    th.sorting{
+	   width: 50px !important;/* largura*/
+    }
+
+    th.sorting_asc{
+	   width: 50px !important;/* largura*/
+    }
+	th{ 
+	 	border:solid 2px black;/*borda preta */
+	 	font-family: Arial;/*tipo de fonte */
+		background-color:#000000;/* cor preta */
+		color: white;/*cor barnca */
+		text-align: center;/*texto alinhado no centro */
+		font-size: 16px;/*tamanho da fonte*/
+		
+	}
+	table td {
+		border:2px solid #000000;/*cor cinza claro */
+		text-align: center;/*texto alinhado a esquerda */
+		min-width: 70px;/*largura */
+		font-family: Arial;/*tipo de fonte */
+	}
+
+	table{
+	    margin-top: 15px;/* margem superior*/
+        text-align: center;/* texto centralizado*/
+        overflow:hidden;/* */
+        font-family: Arial;/*fonte da letra */
+        width: 100%;/*largura */
+        -webkit-border-radius: 25px;/*arredonda os cantos */
+        -moz-border-radius: 25px;/* arredonda os cantos*/
+        border-radius: 35px;/* arredonda os cantos*/
+        border:solid 2px black;/*borda preta */
+        border-collapse: collapse;/*define as celulas dentro da tabela */
+        font-size: 14px;/*tamanho da fonte*/
+        top: 54px;/* margem superior*/
+        right: 143px;/* margem a direita*/
+	}
+
+	th,td{
+    	padding: 15px;/*preenchimento */
+	    border: solid 2px white;/*borda branca */
+	    font-family: Arial;/*fonte da letra */
+	}
+
+	tr:nth-child(odd) {
+		border:solid 2px black;/*borda preta */
+   		background-color:#A9A9A9 !important;/*cor cinza */
+   		font-family: Arial;/*tipo de fonte */
+  	}  
+  	tr:nth-child(even) {
+  		border:0px;/*sem borda */
+    	background-color:white !important;/*cor branca */
+    	font-family: Arial;/*tipo de fonte */
+   	} 
+   	tr:hover{
+        background-color: #A9A9A9;/*cor azul*/
+        cursor: pointer;/*mao do mause */
+        font-family: Arial;/*tipo de fonte */
+    }
+    .container{
+     	margin-left: 300px;/* margem a esquerda*/
+     	margin-top: 50px;/* margem superior*/
+     	width: 1000px;/* largura*/
+     	background: #fff;/*cor branca */
+
+     } 
+     #banner{
+     	background: url("../css/imagem/escola1.jpg");/*loca onde a imagem ta */
+     	background-repeat: no-repeat;/* */
+        height:200px;/* altura*/
+        left: 178px;/*lado esquerdo */
+   		bottom: 47px;
+        position: relative;/* */
+        width: 1500px;/* largura*/
+        margin-bottom:0px;
+        margin-top: 100px;
+    }
+     #tbl {
+        align-content: center;
+   		left: -104px;
+    	position: relative;
+	    bottom: 180px;
+	}
+		
+	#form{
+   	    border: solid 2px black;/* bordas pretas*/
+        background-color: #f2f2f2;/* cinza claro*/
+        padding: 9px 20px;/*preenchimento */
+        width: 606px;/*largura */
+        border-radius: 7px;/* arredonda os cantos*/
+        font-family: Arial;/*tipo de fonte */
+        position: relative;/* posicao*/
+           bottom: 184px;
+    		
+    }
+    #form input[type=text]:hover, input[type=date]:hover,input[type="password"]:hover,select[type="text"]:hover {
+   		background: white; /* cor branca */
+        border:2px solid #0abab5; /* bordas verde tifani*/
+     }
+       
+    #form input[type=text], input[type=date],select{
+    	width:100%;/* largura*/
+    	padding: 12px 20px;/*preenchimento */
+    	margin: 8px 0;/*margem */
+    	display: inline-block;/* */
+    	border:1px solid #ccc;/*bordas */
+    	border-radius: 7px;/*arredonda os cantos */
+    	box-sizing: border-box;/* */
+    	font-family:"lucida Console", Courier, monospace;/*fonte da letra */
+    }
+
+    
+    #campos{
+        right: 115px;
+	    background-color: #f2f2f2;
+	    padding: 9px 20px;
+	    position: relative;
+	    bottom: 159px;
+			
+    }
+ 	#campos input[type=text], input[type=date],select{
+    	width:100%;/*largura */
+    	padding: 12px 20px;/* prenchimento*/
+    	margin: 8px 0;/*margem */
+    	display: inline-block;/* */
+    	border:1px solid #ccc;/* */
+    	border-radius: 7px;/* arredonda os cantos*/
+    	box-sizing: border-box;/* */
+    	font-family:"lucida Console", Courier, monospace;/*fonte da letra*/
+    }
+
+ 	#txtHint{
+	 	position: relative;
+    	width: 1335;
+    	border-radius: 7px;
+   	 	bottom: 139px;
+   		right: 88px;
+	}
+
+	.quadroFinal{
+
+		  height: 70px;
+		  background: #0000FF; /**/
+		  width: 865px;/*largura */
+		  display: inline-block;
+		  text-align: center;
+		  margin-left: 350px;
+		  margin-top: 400px;
+		  border-radius: 7px;/* arredonda os cantos*/
+
+		}
+
+	.quadroFinal a{
+
+		  color: white;
+		  text-align: center;
+		  font-size: 20px;
+		}
+
+
